@@ -7,17 +7,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Tiro+Devanagari+Sanskrit:ital@0;1&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --saffron: #E8760A;
-      --gold: #C8922A;
-      --deep-gold: #A6741C;
-      --cream: #F5EDD8;
-      --parchment: #EDE0C4;
+      --saffron: #C8600A;
+      --gold: #A6741C;
+      --deep-gold: #7A530E;
+      --cream: #3A2408;
+      --parchment: #4A300A;
       --ivory: #FAF6EE;
-      --maroon: #6B1A1A;
-      --deep-maroon: #4A0E0E;
-      --ink: #1C0A00;
-      --smoke: #8B7355;
-      --lotus-pink: #D4607A;
+      --maroon: #8B1A1A;
+      --deep-maroon: #F5E8D0;
+      --ink: #FAF4E8;
+      --smoke: #6B5040;
+      --lotus-pink: #B8405A;
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -42,11 +42,11 @@
     }
     .mandala-bg svg {
       position: absolute;
-      opacity: 0.04;
+      opacity: 0.08;
       animation: slowSpin 120s linear infinite;
     }
     .mandala-bg svg:nth-child(1) { width: 900px; height: 900px; top: -200px; right: -200px; }
-    .mandala-bg svg:nth-child(2) { width: 600px; height: 600px; bottom: -100px; left: -150px; animation-direction: reverse; animation-duration: 90s; opacity: 0.03; }
+    .mandala-bg svg:nth-child(2) { width: 600px; height: 600px; bottom: -100px; left: -150px; animation-direction: reverse; animation-duration: 90s; opacity: 0.06; }
 
     @keyframes slowSpin { to { transform: rotate(360deg); } }
 
@@ -59,7 +59,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background: linear-gradient(to bottom, rgba(28,10,0,0.95) 0%, transparent 100%);
+      background: linear-gradient(to bottom, rgba(250,244,232,0.97) 0%, transparent 100%);
     }
 
     .nav-logo {
@@ -156,15 +156,15 @@
   font-size: clamp(3.2rem, 10vw, 7rem);
   font-weight: 600;
   line-height: 1;
-  color: #fff8ee;
+  color: #2A1200;
   letter-spacing: 0.08em;
   margin-bottom: 1rem;
   text-align: center;
 
   text-shadow:
-    0 0 8px rgba(255,220,160,0.25),
-    0 0 18px rgba(232,118,10,0.25),
-    0 0 35px rgba(200,146,42,0.15);
+    0 0 8px rgba(180,120,30,0.15),
+    0 0 18px rgba(180,90,10,0.12),
+    0 0 35px rgba(160,100,20,0.08);
 }
    .hero-inner {
   position: relative;
@@ -248,13 +248,13 @@
 
     .btn-primary {
       background: var(--saffron);
-      color: var(--ink);
+      color: #FAF4E8;
       font-weight: 600;
     }
     .btn-primary:hover {
       background: var(--gold);
       transform: translateY(-2px);
-      box-shadow: 0 12px 40px rgba(232,118,10,0.35);
+      box-shadow: 0 12px 40px rgba(168,100,10,0.25);
     }
 
     .btn-outline {
@@ -308,7 +308,7 @@
 
     /* ── About ── */
     .about {
-      background: linear-gradient(135deg, rgba(107,26,26,0.15) 0%, transparent 60%);
+      background: linear-gradient(135deg, rgba(200,146,42,0.08) 0%, transparent 60%);
       border-top: 1px solid rgba(200,146,42,0.12);
     }
 
@@ -326,7 +326,7 @@
     .about-frame {
       width: 100%;
       aspect-ratio: 3/4;
-      background: linear-gradient(160deg, var(--maroon) 0%, var(--deep-maroon) 100%);
+      background: linear-gradient(160deg, #EDD8B8 0%, #D9C0A0 100%);
       position: relative;
       overflow: hidden;
     }
@@ -421,7 +421,7 @@
 
     /* ── Listen ── */
     .listen {
-      background: linear-gradient(to bottom, transparent, rgba(107,26,26,0.12), transparent);
+      background: linear-gradient(to bottom, transparent, rgba(200,146,42,0.07), transparent);
       text-align: center;
     }
 
@@ -444,7 +444,7 @@
     }
 
     .platform-card {
-      background: rgba(245,237,216,0.04);
+      background: rgba(255,255,255,0.7);
       border: 1px solid rgba(200,146,42,0.15);
       padding: 2.5rem 2rem;
       text-decoration: none;
@@ -519,7 +519,7 @@
     }
 
     .embed-label {
-      background: rgba(200,146,42,0.08);
+      background: rgba(200,146,42,0.12);
       padding: 0.8rem 1.2rem;
       font-family: 'Cormorant Garamond', serif;
       font-size: 0.75rem;
@@ -554,7 +554,7 @@
       transition: background 0.4s;
     }
 
-    .tradition-cell:hover { background: rgba(107,26,26,0.3); }
+    .tradition-cell:hover { background: rgba(200,146,42,0.1); }
 
     .tradition-cell-icon {
       font-size: 2.2rem;
@@ -580,7 +580,7 @@
     /* ── Contact / Connect ── */
     .connect {
       text-align: center;
-      background: linear-gradient(180deg, transparent, rgba(107,26,26,0.2), transparent);
+      background: linear-gradient(180deg, transparent, rgba(200,146,42,0.08), transparent);
     }
 
     .connect-links {
@@ -690,10 +690,10 @@
       inset: 0;
       background:
         linear-gradient(to bottom,
-          rgba(28,10,0,0.45) 0%,
-          rgba(28,10,0,0.1) 40%,
-          rgba(28,10,0,0.15) 60%,
-          rgba(28,10,0,0.85) 100%);
+          rgba(250,244,232,0.3) 0%,
+          rgba(250,244,232,0.05) 40%,
+          rgba(250,244,232,0.1) 60%,
+          rgba(250,244,232,0.75) 100%);
       z-index: 2;
     }
 .photo-banner-caption {
@@ -713,7 +713,7 @@
       color: var(--cream);
       letter-spacing: 0.15em;
       text-transform: uppercase;
-      text-shadow: 0 2px 20px rgba(0,0,0,0.7);
+      text-shadow: 0 2px 20px rgba(255,255,255,0.6);
     }
 
     .photo-banner-caption-title em {
@@ -769,7 +769,7 @@
     .contact-banner {
       position: relative;
       z-index: 101;
-      background: linear-gradient(90deg, var(--deep-maroon) 0%, rgba(107,26,26,0.95) 50%, var(--deep-maroon) 100%);
+      background: linear-gradient(90deg, #EDD8B8 0%, #F0E2C8 50%, #EDD8B8 100%);
       border-bottom: 1px solid rgba(200,146,42,0.35);
       padding: 0.6rem 2rem;
       display: flex;
@@ -828,9 +828,9 @@
       position: absolute;
       inset: 0;
       background-image:
-        radial-gradient(ellipse at 20% 50%, rgba(107,26,26,0.15) 0%, transparent 50%),
-        radial-gradient(ellipse at 80% 20%, rgba(232,118,10,0.06) 0%, transparent 40%),
-        radial-gradient(ellipse at 60% 80%, rgba(107,26,26,0.1) 0%, transparent 40%);
+        radial-gradient(ellipse at 20% 50%, rgba(200,146,42,0.08) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 20%, rgba(200,120,10,0.05) 0%, transparent 40%),
+        radial-gradient(ellipse at 60% 80%, rgba(200,146,42,0.06) 0%, transparent 40%);;
       pointer-events: none;
     }
     /* ── Better Thumbnail Styling ── */
@@ -839,16 +839,16 @@
   border: 1px solid rgba(200,146,42,0.25);
   overflow: hidden;
   border-radius: 22px;
-  background: rgba(255,255,255,0.03);
+  background: rgba(255,255,255,0.8);
   backdrop-filter: blur(8px);
   transition: all 0.4s ease;
-  box-shadow: 0 10px 40px rgba(0,0,0,0.35);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
 }
 
 .embed-wrap:hover {
   transform: translateY(-6px) scale(1.02);
-  border-color: rgba(232,118,10,0.5);
-  box-shadow: 0 20px 60px rgba(232,118,10,0.25);
+  border-color: rgba(200,120,10,0.5);
+  box-shadow: 0 20px 60px rgba(200,120,10,0.15);
 }
 
 .embed-wrap iframe {
@@ -864,7 +864,7 @@
   padding: 1rem 1.2rem;
   font-size: 0.8rem;
   letter-spacing: 0.25em;
-  color: #ffd27a;
+  color: var(--gold);
 }
 /* Remove gap after banner image */
 
